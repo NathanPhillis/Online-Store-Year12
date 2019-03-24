@@ -13,8 +13,21 @@
     <script type="module" src="node_modules/@material/mwc-icon/mwc-icon.js"></script>
     <script type="module" src="node_modules/@material/mwc-button/mwc-button.js"></script>
 
+    <base href="/">
+
   </head>
   <body>
-    <mwc-button>click me</mwc-button>
+    
+    <!-- Service Worker -->
+    <script>
+      if('serviceWorker' in Navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
+    </script>
+
+    <script></script> <!-- app.js -->
+    <mwc-button>Memes</mwc-button>
   </body>
 </html>

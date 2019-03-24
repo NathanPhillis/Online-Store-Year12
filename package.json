@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "polymer serve --port 8081 | npm run watch",
     "test": "polymer test",
-    "watch": "browser-sync start --proxy localhost:8081 --files \"src/**/*.*, index.html, *.js\""
+    "watch": "browser-sync start --proxy localhost:8081 --files \"src/**/*.*, index.html, *.js, service-worker.js\""
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "author": "Nathan Phillis <nathanphillis1@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@material/mwc-button": "^0.4.0",
+    "@material/mwc-icon": "^0.3.6",
+    "@webcomponents/webcomponentsjs": "^2.2.7",
+    "lit-html": "^1.0.0"
   }
 }
