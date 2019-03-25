@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "polymer serve --port 8081 | npm run watch",
     "test": "polymer test",
-    "watch": "browser-sync start --proxy localhost:8081 --files \"src/**/*.*, index.html, *.js, service-worker.js\""
+    "watch": "browser-sync start --proxy localhost:8081 --files \"src/**/*.*, index.html, *.js, service-worker.js\"",
+    "build": "polymer build"
   },
   "repository": {
     "type": "git",
