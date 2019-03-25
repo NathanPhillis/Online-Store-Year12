@@ -1,6 +1,5 @@
 {
     "entrypoint": "index.html",
-    "shell": "pol",
     "sources": [
         "src/**/*"
     ],
