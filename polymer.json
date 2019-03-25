@@ -1,5 +1,6 @@
 {
     "entrypoint": "index.html",
+    "shell": "pol",
     "sources": [
         "src/**/*"
     ],
@@ -63,6 +64,5 @@
             "addServiceWorker": true
         }
     ],
-    "moduleResolution": "node",
-    "npm": "true"
+    "moduleResolution": "node"
 }
