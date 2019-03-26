@@ -24,8 +24,7 @@
             "html": {
               "minify": true
             },
-            "bundle": true,
-            "addServiceWorker": true
+            "bundle": true
         },
         {
             "name": "es6-bundled",
@@ -43,8 +42,7 @@
             "html": {
               "minify": true
             },
-            "bundle": true,
-            "addServiceWorker": true
+            "bundle": true
         },
         {
             "name": "es5-bundled",
@@ -59,8 +57,7 @@
             "html": {
               "minify": true
             },
-            "bundle": true,
-            "addServiceWorker": true
+            "bundle": true
         }
     ],
     "moduleResolution": "node"
