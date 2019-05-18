@@ -1,0 +1,11 @@
+.tagIn {
+  flex: 1;
+}
+
+.header {
+  height: auto;
+}
+
+.paginator {
+	flex: 1;
+}

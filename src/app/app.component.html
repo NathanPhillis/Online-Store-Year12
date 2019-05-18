@@ -1,0 +1,35 @@
+<div class="container" [class.is-mobile]="mobileQuery.matches">
+  
+	<!--Create the top bar-->
+	<mat-toolbar color="primary">
+    <button mat-icon-button class="light" (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+		<h1 class="title">POP! SHIRTS</h1>
+		<span class="spacer"></span>
+		<a mat-raised-button routerLink="/cart">
+			CART
+			<span class="spacer"></span>
+			<img src="../assets/cart.svg" alt="C" class="cart">
+		</a>
+  </mat-toolbar>
+
+	<!--Create a side-navigation bar that dynamically changes when on small screens-->
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #snav class="sidenav" [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+			
+			<!--Create a link for every page-->
+			<mat-nav-list class="list">
+				<a mat-list-item *ngFor="let link of links" routerLink="{{link.link}}">
+					{{link.name}}
+					<span class="spacer"></span>
+					<mat-icon>{{link.icon}}</mat-icon>
+				</a>
+			</mat-nav-list>
+			
+    </mat-sidenav>
+		
+		<!--Pages go here-->
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

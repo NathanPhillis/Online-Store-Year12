@@ -1,0 +1,22 @@
+<mat-toolbar class="header">
+	<mat-form-field class="tagIn">
+		<mat-chip-list #chipList>
+			<mat-chip *ngFor="let tag of tags" [removable]="removable" (removed)="remove(tag)">
+			{{tag.name}}
+				<mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+			</mat-chip>
+			<input placeholder="Add Tags..." 
+						 [matChipInputFor]="chipList"	
+             [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+             [matChipInputAddOnBlur]="addOnBlur"
+             (matChipInputTokenEnd)="add($event)">
+  	</mat-chip-list>
+	</mat-form-field>
+	<mat-paginator class="paginator" [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 20]">
+	</mat-paginator>
+</mat-toolbar>
+<mat-grid-list cols="5" rowHeight="1:2">
+	<mat-grid-tile *ngFor="let item of items">
+		<app-item></app-item>
+	</mat-grid-tile>
+</mat-grid-list>
