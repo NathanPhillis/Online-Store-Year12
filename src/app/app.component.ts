@@ -25,11 +25,11 @@ export class AppComponent implements OnDestroy{
   mobileQuery: MediaQueryList;
 	private _mobileQueryListener: () => void;
 	
-	constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, carthandler: CartService) {
+	constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, private carthandler: CartService) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
-  }
+	}
 	
 	ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
