@@ -1,0 +1,177 @@
+[
+  {
+    "name": "Xenomorph 1",
+    "topic": " ALIEN",
+    "description": "Depicts a horrifyingly cool looking xenomorph.",
+    "src": "../../assets/products/A1.png",
+    "number": 19.99
+  },
+  {
+    "name": "Xenomorph 2",
+    "topic": " ALIEN",
+    "description": "Depicts another horrifyingly cool looking xenomorph.",
+    "src": "../../assets/products/A2.png",
+    "number": 19.99
+  },
+  {
+    "name": "Xenomorph 3",
+    "topic": " ALIEN",
+    "description": "Depicts a third horrifyingly cool looking xenomorph.",
+    "src": "../../assets/products/A3.png",
+    "number": 19.99
+  },
+  {
+    "name": "Back to the Future Logo",
+    "topic": " Back to the Future",
+    "description": "Depicts the Back to the Future, or in this case the present, logo.",
+    "src": "../../assets/products/BTF1.png",
+    "number": 19.99
+  },
+  {
+    "name": "Marty and Doc",
+    "topic": " Back to the Future",
+    "description": "Scientific shenanigans await!",
+    "src": "../../assets/products/BTF2.png",
+    "number": 19.99
+  },
+  {
+    "name": "Delorean",
+    "topic": " Back to the Future",
+    "description": "The greatest time machine of all time!",
+    "src": "../../assets/products/BTF3.png",
+    "number": 19.99
+  },
+  {
+    "name": "Delorean",
+    "topic": " Back to the Future",
+    "description": "The greatest time machine of all time!",
+    "src": "../../assets/products/BTF3.png",
+    "number": 19.99
+  },
+  {
+    "name": "Ghost Rider 1",
+    "topic": "Ghost Rider",
+    "description": "RAARGH!",
+    "src": "../../assets/products/GR1.png",
+    "number": 19.99
+  },
+  {
+    "name": "Ghost Rider 2",
+    "topic": "Ghost Rider",
+    "description": "RAARGH! x2",
+    "src": "../../assets/products/GR2.png",
+    "number": 19.99
+  },
+  {
+    "name": "Ghost Rider 3",
+    "topic": "Ghost Rider",
+    "description": "RAARGH! x3",
+    "src": "../../assets/products/GR3.png",
+    "number": 19.99
+  },
+  {
+    "name": "Knight Rider 1",
+    "topic": "Knight Rider",
+    "description": "Possibly the coolest looking car in any show! Apart from the time machine delorean of course!",
+    "src": "../../assets/products/KR1.png",
+    "number": 19.99
+  },
+  {
+    "name": "Knight Rider 2",
+    "topic": "Knight Rider",
+    "description": "Memes.",
+    "src": "../../assets/products/KR2.png",
+    "number": 19.99
+  },
+  {
+    "name": "Star Wars 1",
+    "topic": "Star Wars",
+    "description": "Tie fighter after you.",
+    "src": "../../assets/products/SW1.png",
+    "number": 19.99
+  },
+  {
+    "name": "Star Wars 2",
+    "topic": "Star Wars",
+    "description": "Darth-You-know-who.",
+    "src": "../../assets/products/SW2.png",
+    "number": 19.99
+  },
+  {
+    "name": "Star Wars 3",
+    "topic": "Star Wars",
+    "description": "The one and only, Chewy!",
+    "src": "../../assets/products/SW3.png",
+    "number": 19.99
+  },
+  {
+    "name": "Star Wars 4",
+    "topic": "Star Wars",
+    "description": "Stylised stormtrooper.",
+    "src": "../../assets/products/SW4.png",
+    "number": 19.99
+  },
+  {
+    "name": "Star Wars 5",
+    "topic": "Star Wars",
+    "description": "Showing off the old trilogy.",
+    "src": "../../assets/products/SW5.png",
+    "number": 19.99
+  },
+  {
+    "name": "Terminator 1",
+    "topic": "Terminator",
+    "description": "<This description has been TERMINATED>",
+    "src": "../../assets/products/T1.png",
+    "number": 19.99
+  },
+  {
+    "name": "Terminator 2",
+    "topic": "Terminator",
+    "description": "You don't want to see his eyes.",
+    "src": "../../assets/products/T2.png",
+    "number": 19.99
+  },
+  {
+    "name": "Terminator 3",
+    "topic": "Terminator",
+    "description": "The future looks great doesn't it?",
+    "src": "../../assets/products/T3.png",
+    "number": 19.99
+  },
+  {
+    "name": "Tron 1",
+    "topic": "Tron",
+    "description": "110100100101010101010100101010100101012010101010100101010100101",
+    "src": "../../assets/products/TR1.png",
+    "number": 10.10
+  },
+  {
+    "name": "Tron Dude",
+    "topic": "Tron",
+    "description": "Dudeeee...",
+    "src": "../../assets/products/TR2.png",
+    "number": 19.99
+  },
+  {
+    "name": "Tron 2",
+    "topic": "Tron",
+    "description": "Everyone's favorite bitty boi.",
+    "src": "../../assets/products/TR3.png",
+    "number": 19.99
+  },
+  {
+    "name": "Tron 3",
+    "topic": "Tron",
+    "description": "Lightcycles ftw!",
+    "src": "../../assets/products/TR4.png",
+    "number": 19.99
+  },
+  {
+    "name": "Tron 4",
+    "topic": "Tron",
+    "description": "Beam us up! Oh wait, wrong show. :P",
+    "src": "../../assets/products/TR5.png",
+    "number": 19.99
+  }
+]
