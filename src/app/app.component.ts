@@ -1,6 +1,7 @@
 import { Component, ChangeDetectorRef, OnDestroy} from '@angular/core';
 import { MediaMatcher } from '@angular/cdk/layout';
-import { Link } from './link'
+import { Link } from './link';
+import { CartService } from './cart.service'
 
 @Component({
   selector: 'app-root',
@@ -24,7 +25,7 @@ export class AppComponent implements OnDestroy{
   mobileQuery: MediaQueryList;
 	private _mobileQueryListener: () => void;
 	
-	constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
+	constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, private carthandler: CartService) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);

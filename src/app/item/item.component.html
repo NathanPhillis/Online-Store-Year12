@@ -1,3 +1,12 @@
-<mat-card>
-	Mems
+<mat-card class="card">
+	<mat-card-title>{{shirt.name}}</mat-card-title>
+	<mat-card-subtitle>{{shirt.topic}}</mat-card-subtitle>
+	<a routerLink="/about-us"><img mat-card-image [src]="shirt.src"></a>
+	<mat-card-content>{{shirt.description}}</mat-card-content>
+	<mat-card-actions class="footer">
+		<button mat-raised-button color="accent">${{shirt.price}}</button>
+		<button mat-raised-button color="primary" (click)="addToCart()">Add to Cart</button>
+		<span class="spacer"></span>
+		<a mat-raised-button routerLink="/about-us">More Info</a>
+	</mat-card-actions>
 </mat-card>

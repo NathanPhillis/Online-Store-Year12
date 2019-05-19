@@ -1,3 +1,23 @@
-<p>
-  home works!
-</p>
+<div class="top">
+	POP! SHIRTS
+</div>
+
+<mat-card>
+	<h1 class="center">Welcome!</h1>
+	<mat-divider></mat-divider>
+	<br>
+	Hi! Nice to meet you.
+	<br>
+	<br>
+	Welcome to our humble store. Here at Pop! Shirts, we pride ourselves on delivering quality products in a personal and fast manner. This means that YOU get the best service that we can provide. Come check out our catalog to see a wide variety of T-Shirts with catagories ranging from Star Wars to Back to the Future.
+	<br>
+	<br>
+	We hope you enjoy your experience here!
+</mat-card>
+
+<h1 class="center">Featured Shirts:</h1>
+<mat-grid-list cols="3" rowHeight="1:1.5">
+	<mat-grid-tile *ngFor="let item of featured">
+		<app-item [shirt]="item"></app-item>
+	</mat-grid-tile>
+</mat-grid-list>

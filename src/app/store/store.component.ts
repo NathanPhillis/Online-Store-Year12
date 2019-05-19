@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { MatChipInputEvent } from '@angular/material'
+import { MatChipInputEvent } from '@angular/material';
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
-import { ItemComponent } from '../item/item.component'
+import { ItemComponent } from '../item/item.component';
+import { Shirt } from '../shirt'
+import data from '../../assets/products.json';
 
 export interface Tag {
 	name: string;
@@ -19,7 +21,7 @@ export class StoreComponent implements OnInit {
 	tagCap = 10;
 	
 	tags: Tag[] = [];
-	items = [];
+	items: Shirt[] = [];
 	
 	add(event: MatChipInputEvent): void {
     const input = event.input;
@@ -45,5 +47,8 @@ export class StoreComponent implements OnInit {
   }
 	
 	ngOnInit() {
+		for (let shirt of data) {
+			this.items.push(new Shirt(shirt.name, shirt.topic, shirt.description, shirt.src, shirt.number));
+		}
   }
 }
