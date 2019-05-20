@@ -17,9 +17,7 @@ export class AppComponent implements OnDestroy{
 		new Link('ABOUT US', '/about-us', 'info')
 		];
 	
-	navigate(n: number): void {
-	
-	}
+	navigate(n: number): void {}
 	
 	//Adaptive Display Stuff
   mobileQuery: MediaQueryList;

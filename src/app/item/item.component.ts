@@ -12,6 +12,7 @@ export class ItemComponent implements OnInit {
 	
 	private total: number;
 	
+	//Add Items to Cart and add price to total
 	addToCart() {
 		this.carthandler.total += this.shirt.price;
 		this.carthandler.items.push(this.shirt);

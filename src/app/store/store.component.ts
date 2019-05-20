@@ -5,9 +5,7 @@ import { ItemComponent } from '../item/item.component';
 import { Shirt } from '../shirt'
 import data from '../../assets/products.json';
 
-export interface Tag {
-	name: string;
-}
+export interface Tag { name: string; }
 
 @Component({
   selector: 'app-store',
@@ -23,16 +21,13 @@ export class StoreComponent implements OnInit {
 	tags: Tag[] = [];
 	items: Shirt[] = [];
 	
+	//Tag stuff
 	add(event: MatChipInputEvent): void {
     const input = event.input;
     const value = event.value;
-		
-    // Add our fruit
-    if ((value || '').trim() && this.tags.length < this.tagCap) {
+		    if ((value || '').trim() && this.tags.length < this.tagCap) {
       this.tags.push({name: value.trim()});
     }
-
-    // Reset the input value
     if (input) {
       input.value = '';
     }
@@ -40,12 +35,12 @@ export class StoreComponent implements OnInit {
 	
 	remove(tag: Tag): void {
     const index = this.tags.indexOf(tag);
-
-    if (index >= 0) {
+		if (index >= 0) {
       this.tags.splice(index, 1);
     }
   }
 	
+	//Make a <app-item> for every shirt in the array.
 	ngOnInit() {
 		for (let shirt of data) {
 			this.items.push(new Shirt(shirt.name, shirt.topic, shirt.description, shirt.src, shirt.number));

@@ -1,3 +1,4 @@
+<!--Tag and page toolbar-->
 <mat-toolbar class="header">
 	<mat-form-field class="tagIn">
 		<mat-chip-list #chipList>
@@ -15,6 +16,8 @@
 	<mat-paginator class="paginator" [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 20]">
 	</mat-paginator>
 </mat-toolbar>
+
+<!--Grid of <app-item>s-->
 <mat-grid-list class="grid" cols="3" rowHeight="1:1.5">
 	<mat-grid-tile *ngFor="let item of items">
 		<app-item [shirt]="item"></app-item>

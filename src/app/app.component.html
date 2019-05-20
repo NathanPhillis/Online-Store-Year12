@@ -1,6 +1,6 @@
 <div class="container" [class.is-mobile]="mobileQuery.matches">
   
-	<!--Create the top bar-->
+	<!--Top Navigation Bar-->
 	<mat-toolbar color="primary">
     <button mat-icon-button class="light" (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
 		<img class="logo" src="../assets/Logo.png" >
@@ -13,11 +13,11 @@
 		</a>
   </mat-toolbar>
 
-	<!--Create a side-navigation bar that dynamically changes when on small screens-->
+	<!--Side Navigation Bar-->
   <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #snav class="sidenav" [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
 			
-			<!--Create a link for every page-->
+			<!--List of Links on the side of the page-->
 			<mat-nav-list class="list">
 				<a mat-list-item *ngFor="let link of links" routerLink="{{link.link}}">
 					{{link.name}}
@@ -25,12 +25,12 @@
 					<mat-icon>{{link.icon}}</mat-icon>
 				</a>
 			</mat-nav-list>
-			
     </mat-sidenav>
 		
-		<!--Pages go here-->
+		<!--Loaded pages go here-->
     <mat-sidenav-content>
       <router-outlet></router-outlet>
     </mat-sidenav-content>
+		
   </mat-sidenav-container>
 </div>
